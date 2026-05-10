@@ -85,12 +85,12 @@ export default function Agenda() {
             endDate.setHours(parseInt(endH || 13), parseInt(endM || 0), 0, 0);
 
             const payload = {
-                title: newEventData.title || "Nouvel évènement",
+                title: newEventData.title || "Hetsika vaovao",
                 startDate: startDate.toISOString(),
                 endDate: endDate.toISOString(),
                 description: "",
                 category: "General",
-                location: "Bureau"
+                location: "Birao"
             };
 
             const createdApiEvent = await createAgendaEvent(payload);
@@ -100,7 +100,7 @@ export default function Agenda() {
             setIsModalOpen(false);
         } catch (error) {
             console.error("Failed to save event:", error);
-            alert("Erreur lors de la sauvegarde de l'évènement");
+            alert("Nisy fahadisoana teo am-pitahirizana ny hetsika");
         }
     };
 
@@ -108,9 +108,9 @@ export default function Agenda() {
         <div className="h-full flex flex-col p-6 max-w-[1600px] mx-auto w-full relative overflow-hidden  rounded-xl">
             {/* Breadcrumb / Slug */}
             <div className="text-sm text-gray-500 flex items-center gap-2 mb-2 font-medium">
-                <span>Agenda</span>
+                <span>Fandaharam-potoana</span>
                 <span>/</span>
-                <span className="flex items-center gap-1"><CalendarIcon className="w-4 h-4" /> Planning</span>
+                <span className="flex items-center gap-1"><CalendarIcon className="w-4 h-4" /> Fandaminana</span>
             </div>
 
             <div className="flex flex-1 min-h-0 relative">

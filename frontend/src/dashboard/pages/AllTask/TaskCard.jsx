@@ -8,13 +8,13 @@ const PriorityBadge = ({ priority }) => {
     let colorClass = "text-gray-500 bg-gray-100";
     let Icon = null;
 
-    if (priority === "Important") {
+    if (priority === "Zava-dehibe") {
         colorClass = "text-primary bg-green-50";
         Icon = Flame;
-    } else if (priority === "Urgent") {
+    } else if (priority === "Maika") {
         colorClass = "text-red-600 bg-red-50";
         Icon = Zap;
-    } else if (priority === "Important and urgent") {
+    } else if (priority === "Zava-dehibe sy maika") {
         colorClass = "text-red-600 bg-red-100";
         Icon = Flame;
     }

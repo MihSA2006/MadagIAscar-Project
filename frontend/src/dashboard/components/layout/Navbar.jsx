@@ -21,7 +21,7 @@ export default function Navbar() {
             {/* Left items */}
             <div className="flex items-center">
                 <button className="flex items-center gap-2 text-gray-700 font-medium hover:text-primary transition-colors">
-                    Messages <span className="bg-red-100 text-red-600 text-xs font-bold px-2 py-0.5 rounded-full">3</span>
+                    Hafatra <span className="bg-red-100 text-red-600 text-xs font-bold px-2 py-0.5 rounded-full">3</span>
                 </button>
             </div>
 
@@ -70,8 +70,8 @@ export default function Navbar() {
                                     <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></div>
                                 </div>
                                 <div className="flex-1 min-w-0">
-                                    <p className="font-bold text-gray-900 truncate">{user?.email?.split('@')[0] || "User"}</p>
-                                    <p className="text-xs text-gray-400 truncate">{user?.email || "No email"}</p>
+                                    <p className="font-bold text-gray-900 truncate">{user?.email?.split('@')[0] || "Mpampiasa"}</p>
+                                    <p className="text-xs text-gray-400 truncate">{user?.email || "Tsy misy mailaka"}</p>
                                 </div>
                             </div>
 
@@ -81,7 +81,7 @@ export default function Navbar() {
                                     <div className="bg-white/20 p-2 rounded-lg backdrop-blur-md">
                                         <Crown className="w-5 h-5 text-white fill-white/20" />
                                     </div>
-                                    <span className="text-white font-bold text-sm">Upgrade profile</span>
+                                    <span className="text-white font-bold text-sm">Hanavao ny mombamomba</span>
                                 </div>
                                 <span className="bg-white text-gray-900 text-[10px] font-black px-2 py-1 rounded-full px-3">PRO</span>
                             </div>
@@ -89,9 +89,9 @@ export default function Navbar() {
                             {/* Menu Items */}
                             <div className="space-y-1 px-1">
                                 {[
-                                    { icon: User, label: "User Profile" },
-                                    { icon: Layers, label: "Integrations" },
-                                    { icon: HelpCircle, label: "Help Center" },
+                                    { icon: User, label: "Mombamomba ny mpampiasa" },
+                                    { icon: Layers, label: "Fampifandraisana" },
+                                    { icon: HelpCircle, label: "Foibe fanampiana" },
                                 ].map((item, i) => (
                                     <button
                                         key={i}
@@ -109,7 +109,7 @@ export default function Navbar() {
                                 <div className="flex items-center justify-between p-3.5 rounded-2xl">
                                     <div className="flex items-center gap-4">
                                         <Sun className="w-5 h-5 text-gray-400" />
-                                        <span className="text-sm font-semibold text-gray-600">Dark Mode</span>
+                                        <span className="text-sm font-semibold text-gray-600">Endrika maizina</span>
                                     </div>
                                     <div className="w-12 h-6 bg-gray-100 rounded-full relative p-1 cursor-pointer">
                                         <div className="w-4 h-4 bg-white rounded-full shadow-sm"></div>
@@ -121,7 +121,7 @@ export default function Navbar() {
                             <div className="p-1 mt-2">
                                 <button onClick={handleLogout} className="w-full flex items-center gap-4 p-4 text-red-500 bg-red-50 hover:bg-red-100 rounded-[1.5rem] transition-all group overflow-hidden relative">
                                     <LogOut className="w-5 h-5 transition-transform group-hover:scale-110" />
-                                    <span className="text-sm font-black tracking-tight">Déconnexion</span>
+                                    <span className="text-sm font-black tracking-tight">Hivoaka</span>
                                 </button>
                             </div>
                         </div>

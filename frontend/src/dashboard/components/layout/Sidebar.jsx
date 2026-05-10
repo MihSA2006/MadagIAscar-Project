@@ -16,15 +16,15 @@ import {
 import { cn } from "../../lib/utils";
 
 const GENERAL_LINKS = [
-    { name: "All Task", href: "/tasks", icon: ListTodo },
-    { name: "Agenda", href: "/agenda", icon: Calendar },
-    { name: "AI Chat", href: "/chat", icon: Bot },
+    { name: "Asa rehetra", href: "/tasks", icon: ListTodo },
+    { name: "Fandaharam-potoana", href: "/agenda", icon: Calendar },
+    { name: "Resaka AI", href: "/chat", icon: Bot },
 ];
 
 const APPEARANCE_LINKS = [
-    { name: "Trash", href: "/trash", icon: Trash2 },
-    { name: "Settings", href: "/settings", icon: Settings },
-    { name: "Logout", href: "/logout", icon: LogOut, textClass: "text-red-500" },
+    { name: "Fako", href: "/trash", icon: Trash2 },
+    { name: "Fikirakirana", href: "/settings", icon: Settings },
+    { name: "Hivoaka", href: "/logout", icon: LogOut, textClass: "text-red-500" },
 ];
 
 export default function Sidebar() {
@@ -106,7 +106,7 @@ export default function Sidebar() {
             <div className="flex-1 overflow-y-auto px-4 flex flex-col gap-8 pb-6">
                 {/* General */}
                 <div>
-                    {!collapsed && <p className="text-xs font-semibold text-gray-400 mb-3 px-4 uppercase tracking-wider">General</p>}
+                    {!collapsed && <p className="text-xs font-semibold text-gray-400 mb-3 px-4 uppercase tracking-wider">Sokajy ankapobeny</p>}
                     <div className="flex flex-col gap-1">
                         {GENERAL_LINKS.map(renderLink)}
                     </div>
@@ -114,7 +114,7 @@ export default function Sidebar() {
 
                 {/* Appearance */}
                 <div className="mt-auto">
-                    {!collapsed && <p className="text-xs font-semibold text-gray-400 mb-3 px-4 uppercase tracking-wider">Appearance</p>}
+                    {!collapsed && <p className="text-xs font-semibold text-gray-400 mb-3 px-4 uppercase tracking-wider">Seho sy endrika</p>}
                     <div className="flex flex-col gap-1">
                         {APPEARANCE_LINKS.map(renderLink)}
                     </div>

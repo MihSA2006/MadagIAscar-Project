@@ -42,7 +42,7 @@ export const initialTasks = [
 ];
 
 export const COLUMNS = [
-    { id: "a-faire", title: "À FAIRE", color: "bg-gray-100 text-gray-700 font-bold border border-gray-200" },
-    { id: "en-cours", title: "EN COURS", color: "bg-red-100 text-red-700 font-bold" },
-    { id: "terminer", title: "TERMINÉ", color: "bg-green-100 text-green-700 font-bold" }
+    { id: "a-faire", title: "HATAO", color: "bg-gray-100 text-gray-700 font-bold border border-gray-200" },
+    { id: "en-cours", title: "ANDEHANANA", color: "bg-red-100 text-red-700 font-bold" },
+    { id: "terminer", title: "VITA", color: "bg-green-100 text-green-700 font-bold" }
 ];

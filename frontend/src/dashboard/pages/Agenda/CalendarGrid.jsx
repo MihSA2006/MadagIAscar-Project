@@ -51,7 +51,7 @@ export default function CalendarGrid({
             <div className="flex items-center justify-between mb-8">
                 <div className="flex items-center gap-4">
                     <h2 className="text-2xl font-bold text-gray-800">
-                        {format(currentDate, viewMode === "month" ? "MMMM yyyy" : "'Week of' MMMM dd")}
+                        {format(currentDate, viewMode === "month" ? "MMMM yyyy" : "'Herinandron'ny' dd MMMM")}
                     </h2>
                     <div className="flex items-center gap-1 text-primary">
                         <button onClick={prevDate} className="p-1 hover:bg-primary/10 rounded-full transition-colors"><ChevronLeft className="w-5 h-5" /></button>
@@ -61,7 +61,7 @@ export default function CalendarGrid({
 
                 <div className="flex items-center gap-4">
                     <button onClick={goToToday} className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg font-medium transition-colors text-sm">
-                        Today
+                        Anio
                     </button>
 
                     <div className="flex bg-gray-100 p-1 rounded-lg text-sm font-medium">
@@ -72,7 +72,7 @@ export default function CalendarGrid({
                                 viewMode === "week" ? "bg-white text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-900"
                             )}
                         >
-                            Week
+                            Herinandro
                         </button>
                         <button
                             onClick={() => setViewMode("month")}
@@ -81,7 +81,7 @@ export default function CalendarGrid({
                                 viewMode === "month" ? "bg-white text-gray-900 shadow-sm" : "text-gray-500 hover:text-gray-900"
                             )}
                         >
-                            Month
+                            Volana
                         </button>
                     </div>
 

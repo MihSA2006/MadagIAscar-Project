@@ -15,7 +15,7 @@ function App() {
           <Route path="chat" element={<AIChat />} />
           <Route path="*" element={
             <div className="p-6">
-              <h1 className="text-2xl font-bold text-gray-800">Feature Coming Soon</h1>
+              <h1 className="text-2xl font-bold text-gray-800">Ho avy tsy ho ela ity fiasa ity</h1>
             </div>
           } />
         </Route>

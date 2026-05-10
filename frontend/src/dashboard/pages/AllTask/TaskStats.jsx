@@ -27,7 +27,7 @@ export default function TaskStats({ tasks }) {
     return (
         <div className="w-full lg:w-72 flex flex-col gap-6 flex-shrink-0 bg-gray-50/50 p-6 rounded-[2.5rem] border border-gray-100">
             <div className="flex items-center justify-between px-2">
-                <h3 className="font-black text-gray-900 text-lg">Quick Stats</h3>
+                <h3 className="font-black text-gray-900 text-lg">Fintin'isa haingana</h3>
                 <TrendingUp className="w-5 h-5 text-primary" />
             </div>
 
@@ -63,35 +63,35 @@ export default function TaskStats({ tasks }) {
                             <span className="text-xl font-black text-gray-900">{completionRate}%</span>
                         </div>
                     </div>
-                    <p className="text-sm font-bold text-gray-900">Task Completion</p>
-                    <p className="text-xs text-gray-400 mt-1">Consistency is key!</p>
+                    <p className="text-sm font-bold text-gray-900">Asa vita</p>
+                    <p className="text-xs text-gray-400 mt-1">Ny fikirizana no lakile!</p>
                 </div>
 
                 <div className="grid grid-cols-1 gap-3">
                     <StatItem
                         icon={ListFilter}
-                        label="Total Tasks"
+                        label="Isan'ny asa rehetra"
                         value={total}
                         color="bg-green-50 text-primary"
                         delay={100}
                     />
                     <StatItem
                         icon={Clock}
-                        label="In Progress"
+                        label="Andehanana"
                         value={inProgress}
                         color="bg-green-50 text-primary"
                         delay={200}
                     />
                     <StatItem
                         icon={CheckCircle2}
-                        label="Completed"
+                        label="Vita"
                         value={completed}
                         color="bg-red-50 text-red-500"
                         delay={300}
                     />
                     <StatItem
                         icon={AlertCircle}
-                        label="To Do"
+                        label="Hatao"
                         value={toDo}
                         color="bg-gray-50 text-gray-500"
                         delay={400}
@@ -102,8 +102,8 @@ export default function TaskStats({ tasks }) {
             {/* Suggestion Card */}
             <div className="mt-auto bg-primary p-5 rounded-[2rem] text-white relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-16 h-16 bg-white/20 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-                <p className="font-black text-sm mb-2">Pro Tip 💡</p>
-                <p className="text-xs text-white/80 leading-relaxed font-medium">Keep your "In Progress" tasks under 3 for maximum focus!</p>
+                <p className="font-black text-sm mb-2">Torohevitra mahasoa 💡</p>
+                <p className="text-xs text-white/80 leading-relaxed font-medium">Tazony latsaky ny 3 ny asa 'Andehanana' mba hifantohana tsara!</p>
             </div>
         </div>
     );

@@ -52,7 +52,7 @@ export default function BoardColumn({ column, tasks, onDelete }) {
 
                 {/* Empty state additive button */}
                 <button className="mt-2 w-full py-3 flex items-center justify-center gap-2 text-gray-500 font-medium hover:bg-white hover:shadow-sm rounded-xl border border-dashed border-gray-300 hover:border-gray-400 transition-all">
-                    <Plus className="w-4 h-4" /> Add Card
+                    <Plus className="w-4 h-4" /> Hampiditra
                 </button>
             </div>
         </div>

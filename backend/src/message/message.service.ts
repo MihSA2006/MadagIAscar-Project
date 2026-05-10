@@ -14,7 +14,7 @@ export class MessageService {
         if (!baseUrl) {
             throw new Error('AI_BASE_URL is not defined in environment variables');
         }
-        this.webhookUrl = `${baseUrl.replace(/\/$/, '')}/webhook-test/question`;
+        this.webhookUrl = `${baseUrl.replace(/\/$/, '')}/webhook/question`;
     }
 
     async sendMessage(userId: string, message: string) {

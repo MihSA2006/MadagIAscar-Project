@@ -22,9 +22,9 @@ const REV_STATUS_MAP = {
 };
 
 const PRIORITY_MAP = {
-    'HIGH': 'Urgent',
-    'MEDIUM': 'Important',
-    'LOW': 'Normal'
+    'HIGH': 'Maika',
+    'MEDIUM': 'Zava-dehibe',
+    'LOW': 'Tsotra'
 };
 
 export default function AllTask() {
@@ -42,8 +42,8 @@ export default function AllTask() {
             const mapped = data.map(t => ({
                 id: t.id,
                 status: STATUS_MAP[t.status] || 'a-faire',
-                priority: PRIORITY_MAP[t.priority] || 'Important',
-                tag: "IA Generated",
+                priority: PRIORITY_MAP[t.priority] || 'Zava-dehibe',
+                tag: "Novokarin'ny IA",
                 title: t.title,
                 assignees: ["https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"],
                 comments: 0,
@@ -82,8 +82,8 @@ export default function AllTask() {
             const mapped = {
                 id: newItem.id,
                 status: STATUS_MAP[newItem.status] || 'a-faire',
-                priority: PRIORITY_MAP[newItem.priority] || 'Important',
-                tag: "IA Generated",
+                priority: PRIORITY_MAP[newItem.priority] || 'Zava-dehibe',
+                tag: "Novokarin'ny IA",
                 title: newItem.title,
                 assignees: ["https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"],
                 comments: 0,
@@ -110,19 +110,19 @@ export default function AllTask() {
         <div className="h-full flex flex-col p-6 max-w-[1600px] mx-auto w-full">
             {/* Breadcrumb */}
             <div className="text-sm text-gray-500 flex items-center gap-2 mb-4 font-medium transition-opacity">
-                <span>Task</span>
+                <span>Asa</span>
                 <span>/</span>
-                <span className="flex items-center gap-1"><Users className="w-4 h-4" /> All Task</span>
+                <span className="flex items-center gap-1"><Users className="w-4 h-4" /> Asa rehetra</span>
             </div>
 
             {/* Header */}
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
                 <div>
                     <div className="flex items-center gap-3">
-                        <h1 className="text-3xl font-bold text-gray-900 tracking-tight">Product Development</h1>
+                        <h1 className="text-3xl font-bold text-gray-900 tracking-tight">Fampandrosoana ny vokatra</h1>
                         <Star className="w-6 h-6 text-red-500 fill-red-500" />
                         <span className="bg-secondary/10 text-secondary text-xs font-bold px-2 py-1 rounded-md flex items-center gap-1 border border-secondary/20">
-                            <Lock className="w-3 h-3" /> PRIVATE
+                            <Lock className="w-3 h-3" /> MANOKANA
                         </span>
                     </div>
                 </div>
@@ -130,13 +130,13 @@ export default function AllTask() {
                 {/* Actions - specific to task */}
                 <div className="flex items-center gap-3">
                     <button className="flex items-center gap-2 text-gray-600 font-medium px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors border border-transparent">
-                        <Filter className="w-4 h-4" /> Filter
+                        <Filter className="w-4 h-4" /> Sivana
                     </button>
                     <button className="flex items-center gap-2 text-gray-600 font-medium px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors border border-transparent">
-                        <Users className="w-4 h-4" /> Share
+                        <Users className="w-4 h-4" /> Hozaraina
                     </button>
                     <button onClick={handleCreateTask} className="flex items-center gap-2 bg-[#00843D] text-white font-medium px-4 py-2 rounded-lg shadow-sm hover:opacity-90 transition-opacity">
-                        <Plus className="w-4 h-4" /> New Task
+                        <Plus className="w-4 h-4" /> Asa vaovao
                     </button>
                 </div>
             </div>
