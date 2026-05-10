@@ -28,7 +28,7 @@ export class ChatAiService {
             await this.chatMessageRepository.save(userMessage);
 
             // 2. Contact n8n Webhook using native fetch API
-            const n8nUrl = 'https://datazara.app.n8n.cloud/webhook-test/chatbot';
+            const n8nUrl = 'https://datazara.app.n8n.cloud/webhook/chatbot';
 
             const response = await fetch(n8nUrl, {
                 method: 'POST',
